@@ -1,140 +1,88 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - Projeto Datainsight</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>FAQ - DataInsight</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
   <style>
-    * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  background-color: #f7f7fc;
-}
-
-.sidebar {
-  width: 250px;
-  background-color: #3d3fbf;
-  color: white;
-  padding: 40px 20px;
-}
-
-.sidebar h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.sidebar p {
-  font-size: 14px;
-  margin-bottom: 30px;
-}
-
-.sidebar nav a {
-  display: block;
-  margin-bottom: 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.main-content {
-  flex-grow: 1;
-  padding: 40px;
-}
-
-.main-content h1 {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.faq-grid {
-  display: grid;
+    /* Layout especial para FAQ */
+.faq-cards {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
 }
 
-.faq-item {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.faq-item h2 {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.faq-item p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.4;
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #1e1e1e;
 }
 
   </style>
 <body>
-  <aside class="sidebar">
-    <h2>Datainsight</h2>
-    <p>Transformando dados em decisões inteligentes para Natura e Avon</p>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">FAQ</a>
-      <a href="#">Contato</a>
-    </nav>
-  </aside>
-  <main class="main-content">
-    <h1>FAQ – Perguntas Frequentes</h1>
-    <div class="faq-grid">
-      <div class="faq-item">
-        <h2>1 - O que é o Projeto Datainsight?</h2>
-        <p>O Datainsight é uma iniciativa que tem como objetivo extrair e aprimorar a análise de dados por meio de IA e ML para gerar insights e apoiar a tomada de decisões.</p>
+  <div class="container">
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+      <h2>DataInsight</h2>
+      <p class="tagline">Transformando dados em decisões inteligentes para Natura e Avon</p>
+      <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="#">Contato</a>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <h1>FAQ – Perguntas Frequentes</h1>
+
+      <div class="cards faq-cards">
+        <div class="card">
+          <h3>1 - O que é o Projeto DataInsight?</h3>
+          <p>O DataInsight é uma iniciativa que tem como objetivo centralizar e aprimorar a análise de dados de vendas utilizando inteligência artificial (IA) e machine learning (ML) para gerar insights estratégicos e apoiar a tomada de decisões.</p>
+        </div>
+        <div class="card">
+          <h3>2 - Quem são os principais envolvidos no projeto?</h3>
+          <p>O projeto envolve stakeholders como gerentes de TI, analistas de dados, equipes de vendas, times de logística e áreas responsáveis pelo tratamento e análise de dados.</p>
+        </div>
+        <div class="card">
+          <h3>3 - Quais tecnologias serão utilizadas?</h3>
+          <p>Serão utilizadas recursos de tecnologias de inteligência artificial, machine learning, ferramentas de visualização de dados (como BI) e plataformas analíticas para geração de dashboards interativos e insights inteligentes.</p>
+        </div>
+        <div class="card">
+          <h3>4 - Quais são os principais benefícios esperados?</h3>
+          <ul>
+            <li>Melhor gestão de estoque</li>
+            <li>Antecipação de tendências de consumo</li>
+            <li>Agilidade na tomada de decisão</li>
+            <li>Processos mais inteligentes e eficientes</li>
+            <li>Maior competitividade no mercado</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>5 - Como será feita a implementação do projeto?</h3>
+          <p>A implementação ocorrerá em etapas, com levantamento de dados, desenvolvimento de modelos de IA e ML, testes e validações, além de treinamentos para as áreas envolvidas.</p>
+        </div>
+        <div class="card">
+          <h3>6 - O projeto afetará os processos atuais?</h3>
+          <p>Sim, de forma positiva. O DataInsight irá otimizar os processos existentes, proporcionando mais agilidade, automação e suporte inteligente para decisões estratégicas.</p>
+        </div>
+        <div class="card">
+          <h3>7 - Como serão tratados os dados sensíveis?</h3>
+          <p>Todos os dados serão tratados em conformidade com a Lei Geral de Proteção de Dados (LGPD), garantindo privacidade, segurança e governança sobre as informações.</p>
+        </div>
+        <div class="card">
+          <h3>8 - Quando o projeto estará concluído?</h3>
+          <p>O cronograma prevê a conclusão em fases. Algumas funcionalidades serão entregues antes, mas a versão completa será concluída nos meses seguintes após o início da execução.</p>
+        </div>
+        <div class="card">
+          <h3>9 - Quem devo procurar em caso de dúvidas ou problemas?</h3>
+          <p>Em caso de dúvidas, entre em contato com o time de suporte técnico do projeto DataInsight ou com os responsáveis da área de dados na sua unidade.</p>
+        </div>
       </div>
-      <div class="faq-item">
-        <h2>2 - Quem são os principais envolvidos no projeto?</h2>
-        <p>Gestores de TI, analistas de dados, equipes de vendas, times de logística e áreas responsáveis por tecnologia e dados.</p>
-      </div>
-      <div class="faq-item">
-        <h2>3 - Quais tecnologias serão utilizadas?</h2>
-        <p>IA, machine learning, ferramentas de visualização, engenharia de dados e big data.</p>
-      </div>
-      <div class="faq-item">
-        <h2>4 - Quais são os principais benefícios esperados?</h2>
-        <p>Melhor gestão de estoque, agilidade nas tomadas de decisão, processos mais eficientes e aumento da competitividade.</p>
-      </div>
-      <div class="faq-item">
-        <h2>5 - Como será feita a implementação do projeto?</h2>
-        <p>Por etapas, com validações, testes, homologações e uso de técnicas de IA e ML.</p>
-      </div>
-      <div class="faq-item">
-        <h2>6 - O projeto afetará os processos atuais?</h2>
-        <p>Sim, de forma positiva. O Datainsight irá transformar os processos com automações e inteligência de dados.</p>
-      </div>
-      <div class="faq-item">
-        <h2>7 - Como serão tratados os dados sensíveis?</h2>
-        <p>De acordo com a LGPD, garantindo privacidade, segurança e governança.</p>
-      </div>
-      <div class="faq-item">
-        <h2>8 - Quando o projeto estará concluído?</h2>
-        <p>Com previsão de conclusão em 2025, com entregas sendo comunicadas ao longo do tempo.</p>
-      </div>
-      <div class="faq-item">
-        <h2>9 - Quem devo procurar em caso de dúvidas ou problemas?</h2>
-        <p>Procure o time de atendimento ou envie um chamado para que sua solicitação seja direcionada ao suporte.</p>
-      </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
+
 
