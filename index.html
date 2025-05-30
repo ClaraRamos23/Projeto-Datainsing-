@@ -1,16 +1,14 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Datalnsight</title>
-  <link rel="stylesheet" href="styles.css"/>
-
+  <meta charset="UTF-8">
+  <title>Início - DataInsight</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<style>
-  * {
+  <style>
+    /* Reset e estrutura geral */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,29 +16,33 @@
 }
 
 body {
-  background-color: #f1f1ff;
-  color: #333;
+  background-color: #f0f0ff;
 }
 
 .container {
   display: flex;
+  height: 100vh;
 }
 
+/* Sidebar */
 .sidebar {
-  width: 250px;
-  background-color: #5a4fcf;
+  background-color: #3f3fff;
   color: white;
-  padding: 60px;
-  min-height: 100vh;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo {
-  font-size: 1.5em;
+.sidebar h2 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.slogan {
-  font-size: 0.9em;
+.tagline {
+  font-size: 12px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -49,71 +51,122 @@ body {
   color: white;
   text-decoration: none;
   margin: 10px 0;
-  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
+.menu a.active,
 .menu a:hover {
-  text-decoration: underline;
+  background-color: #2e2ee6;
 }
 
+/* Conteúdo principal */
 .main-content {
   flex-grow: 1;
   padding: 40px;
 }
 
-.header-img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  margin: 20px 0;
-  border-radius: 10px;
+.main-content h1 {
+  font-size: 24px;
+  color: #333;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
+.main-content h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  color: #1e1e1e;
+}
+
+/* Imagem central */
+.main-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Cartões de informação */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
 .card {
-  background: white;
+  background-color: white;
   padding: 20px;
-  border-radius: 10px;
-  flex: 1;
-  min-width: 250px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .card h3 {
+  font-size: 16px;
   margin-bottom: 10px;
+  color: #111;
+}
+
+.card p, .card ul {
+  font-size: 14px;
+  color: #444;
 }
 
 .card ul {
+  padding-left: 20px;
   list-style: disc;
-  margin-left: 20px;
 }
-img{
-  height:60%;
-  width:90%;
-  border-radius: 10px;
-}
-</style>
+
+  </style>
 <body>
   <div class="container">
+    <!-- Menu lateral -->
     <aside class="sidebar">
-      <h2 class="logo">DataInsight</h2>
-      <p class="slogan">Transformando dados em decisões inteligentes para futuras ações</p>
+      <h2>DataInsight</h2>
+      <p class="tagline">Transformando dados em decisões inteligentes para Natura e Avon</p>
       <nav class="menu">
-        <a href="FAQ.html">FAQ</a>
-        <a href="Contato.html">Contato</a>
+        <a href="index.html" class="active">Início</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#">Contato</a>
       </nav>
     </aside>
+
+    <!-- Conteúdo principal -->
     <main class="main-content">
       <h1>Início</h1>
       <h2>Bem Vindo ao DataInsight</h2>
-      <img src="https://raw.githubusercontent.com/ClaraRamos23/Projeto-Datainsing-/refs/heads/main/Imagem%20Dados.webp" alt="#" /> 
-      <div class="cards"></div>
-        <div class="card"> </div>
+
+      <img src="sua-imagem.jpg" alt="Escritório com computadores" class="main-image">
+
+      <div class="info-cards">
+        <div class="card">
+          <h3>Objetivo</h3>
+          <p>Centralizar e aprimorar análise de dados de vendas das empresas Natura/Avon utilizando insights inteligentes gerados por IA através de Machine Learning e simplificação dos dados.</p>
+        </div>
+        <div class="card">
+          <h3>Funcionalidades Principais</h3>
+          <ul>
+            <li>Análise Preditiva</li>
+            <li>Integração com Sistema de Vendas</li>
+            <li>Otimização de Logística</li>
+            <li>Insights com IA e Machine Learning</li>
+            <li>Gestão de Estoques Inteligente</li>
+            <li>Dashboard Interativo em Tempo Real</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Linha do Tempo</h3>
+          <ul>
+            <li>Fase 1 – Levantamento de Dados</li>
+            <li>Fase 2 – Desenvolvimento de Modelos</li>
+            <li>Fase 3 – Testes e Validações</li>
+            <li>Fase 4 – Implementação</li>
+            <li>Fase 5 – Monitoramento e Melhorias Contínuas</li>
+          </ul>
+        </div>
+      </div>
     </main>
   </div>
 </body>
+</html>
