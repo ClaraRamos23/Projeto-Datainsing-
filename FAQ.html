@@ -1,94 +1,172 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>FAQ - DataInsight</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
   <style>
-    /* Layout especial para FAQ */
-.faq-cards {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-.card h3 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #1e1e1e;
-}
-    
-.img{
-  height:30%;
-  width:90%;
-  border-radius: 10px;
-}
+    body {
+      background-color: #f0eeff;
+      color: #333;
+    }
 
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 220px;
+      background-color: #5a4fcf;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 0.85em;
+      margin-bottom: 30px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      text-decoration: underline;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    .main-content {
+      flex-grow: 1;
+      padding: 40px 50px;
+    }
+
+    .main-content h1 {
+      font-size: 1.8em;
+      margin-bottom: 30px;
+    }
+
+    /* CARDS DE FAQ */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #1e1e1e;
+    }
+
+    .card p,
+    .card ul {
+      font-size: 0.95em;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    .card ul li {
+      margin-bottom: 4px;
+    }
   </style>
+</head>
 <body>
   <div class="container">
-    <!-- Menu lateral -->
+    <!-- MENU LATERAL -->
     <aside class="sidebar">
       <h2>DataInsight</h2>
       <p class="tagline">Transformando dados em decisões inteligentes para Natura e Avon</p>
       <nav class="menu">
         <a href="index.html">Início</a>
         <a href="faq.html" class="active">FAQ</a>
-        <a href="#">Contato</a>
+        <a href="contato.html">Contato</a>
       </nav>
     </aside>
 
-    <!-- Conteúdo principal -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-content">
       <h1>FAQ – Perguntas Frequentes</h1>
 
-      <div class="cards faq-cards">
+      <div class="cards">
         <div class="card">
           <h3>1 - O que é o Projeto DataInsight?</h3>
-          <p>O DataInsight é uma iniciativa que tem como objetivo centralizar e aprimorar a análise de dados de vendas utilizando inteligência artificial (IA) e machine learning (ML) para gerar insights estratégicos e apoiar a tomada de decisões.</p>
+          <p>O DataInsight é uma iniciativa que visa centralizar e aprimorar a análise de dados de vendas utilizando IA e ML para gerar insights estratégicos e apoiar decisões.</p>
         </div>
         <div class="card">
           <h3>2 - Quem são os principais envolvidos no projeto?</h3>
-          <p>O projeto envolve stakeholders como gerentes de TI, analistas de dados, equipes de vendas, times de logística e áreas responsáveis pelo tratamento e análise de dados.</p>
+          <p>Gerentes de TI, analistas de dados, equipes de vendas, logística e áreas responsáveis pela análise de dados.</p>
         </div>
         <div class="card">
           <h3>3 - Quais tecnologias serão utilizadas?</h3>
-          <p>Serão utilizadas recursos de tecnologias de inteligência artificial, machine learning, ferramentas de visualização de dados (como BI) e plataformas analíticas para geração de dashboards interativos e insights inteligentes.</p>
+          <p>IA, machine learning, BI e plataformas analíticas para dashboards e insights inteligentes.</p>
         </div>
         <div class="card">
           <h3>4 - Quais são os principais benefícios esperados?</h3>
           <ul>
             <li>Melhor gestão de estoque</li>
-            <li>Antecipação de tendências de consumo</li>
-            <li>Agilidade na tomada de decisão</li>
-            <li>Processos mais inteligentes e eficientes</li>
-            <li>Maior competitividade no mercado</li>
+            <li>Antecipação de tendências</li>
+            <li>Agilidade nas decisões</li>
+            <li>Processos eficientes</li>
+            <li>Competitividade</li>
           </ul>
         </div>
         <div class="card">
           <h3>5 - Como será feita a implementação do projeto?</h3>
-          <p>A implementação ocorrerá em etapas, com levantamento de dados, desenvolvimento de modelos de IA e ML, testes e validações, além de treinamentos para as áreas envolvidas.</p>
+          <p>Etapas com levantamento de dados, desenvolvimento de modelos, testes, validações e treinamentos.</p>
         </div>
         <div class="card">
           <h3>6 - O projeto afetará os processos atuais?</h3>
-          <p>Sim, de forma positiva. O DataInsight irá otimizar os processos existentes, proporcionando mais agilidade, automação e suporte inteligente para decisões estratégicas.</p>
+          <p>Sim, otimizando processos com mais agilidade, automação e suporte a decisões.</p>
         </div>
         <div class="card">
           <h3>7 - Como serão tratados os dados sensíveis?</h3>
-          <p>Todos os dados serão tratados em conformidade com a Lei Geral de Proteção de Dados (LGPD), garantindo privacidade, segurança e governança sobre as informações.</p>
+          <p>Com conformidade à LGPD, garantindo privacidade, segurança e governança.</p>
         </div>
         <div class="card">
           <h3>8 - Quando o projeto estará concluído?</h3>
-          <p>O cronograma prevê a conclusão em fases. Algumas funcionalidades serão entregues antes, mas a versão completa será concluída nos meses seguintes após o início da execução.</p>
+          <p>Será concluído por fases, com entregas parciais antes da versão final.</p>
         </div>
         <div class="card">
           <h3>9 - Quem devo procurar em caso de dúvidas ou problemas?</h3>
-          <p>Em caso de dúvidas, entre em contato com o time de suporte técnico do projeto DataInsight ou com os responsáveis da área de dados na sua unidade.</p>
+          <p>Contate o time de suporte ou os responsáveis pela área de dados na sua unidade.</p>
         </div>
       </div>
     </main>
   </div>
 </body>
 </html>
+
 
 
