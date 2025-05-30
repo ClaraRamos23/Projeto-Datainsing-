@@ -1,38 +1,46 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Início - DataInsight</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Datalnsight</title>
+  <link rel="stylesheet" href="styles.css"/>
+
 </head>
-  <style>
-    /* Layout principal */
-body {
+
+<style>
+  * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background-color: #f1f0ff;
+}
+
+body {
+  background-color: #f1f1ff;
+  color: #333;
 }
 
 .container {
   display: flex;
 }
 
-/* Menu lateral */
 .sidebar {
-  background-color: #4e48f0;
+  width: 250px;
+  background-color: #5a4fcf;
   color: white;
-  width: 220px;
-  padding: 20px;
-  height: 100vh;
+  padding: 60px;
+  min-height: 100vh;
 }
 
-.sidebar h2 {
-  font-size: 20px;
-  margin-bottom: 5px;
+.logo {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.sidebar .tagline {
-  font-size: 12px;
+.slogan {
+  font-size: 0.9em;
   margin-bottom: 30px;
 }
 
@@ -41,117 +49,71 @@ body {
   color: white;
   text-decoration: none;
   margin: 10px 0;
-  padding: 8px;
-  border-radius: 6px;
+  font-weight: bold;
 }
 
-.menu a.active,
 .menu a:hover {
-  background-color: #3732b6;
+  text-decoration: underline;
 }
 
-/* Conteúdo principal */
 .main-content {
-  flex: 1;
+  flex-grow: 1;
   padding: 40px;
 }
 
-.main-content h1 {
-  font-size: 28px;
-  color: #1e1e1e;
-}
-
-.main-content h2 {
-  font-size: 22px;
-  color: #1e1e1e;
-  margin-bottom: 20px;
-}
-
-/* Imagem */
-.main-content img {
+.header-img {
   width: 100%;
-  max-height: 200px;
+  max-height: 300px;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
 }
 
-/* Cards de informação */
-.info-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.cards {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .card {
-  background-color: white;
+  background: white;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .card h3 {
-  margin-top: 0;
-  font-size: 16px;
-  color: #1e1e1e;
+  margin-bottom: 10px;
 }
 
 .card ul {
-  padding-left: 20px;
+  list-style: disc;
+  margin-left: 20px;
 }
-
-  </style>
+img{
+  height:60%;
+  width:90%;
+  border-radius: 10px;
+}
+</style>
 <body>
   <div class="container">
-    <!-- Menu lateral -->
     <aside class="sidebar">
-      <h2>DataInsight</h2>
-      <p class="tagline">Transformando dados em decisões inteligentes para Natura e Avon</p>
+      <h2 class="logo">DataInsight</h2>
+      <p class="slogan">Transformando dados em decisões inteligentes para futuras ações</p>
       <nav class="menu">
-        <a href="index.html" class="active">Início</a>
-        <a href="faq.html">FAQ</a>
-        <a href="#">Contato</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="Contato.html">Contato</a>
       </nav>
     </aside>
-
-    <!-- Conteúdo principal -->
     <main class="main-content">
       <h1>Início</h1>
       <h2>Bem Vindo ao DataInsight</h2>
-      <img src="escritorio.jpg" alt="Imagem do escritório">
-
-      <div class="info-cards">
-        <div class="card">
-          <h3>Objetivo</h3>
-          <p>
-            Centralizar e aprimorar análise de dados de vendas das empresas Natura/Avon utilizando insights inteligentes gerados por IA através de Machine Learning e simplificação dos dados.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Funcionalidades Principais</h3>
-          <ul>
-            <li>Análise Preditiva</li>
-            <li>Integração com Sistemas de Vendas</li>
-            <li>Otimização de Logística</li>
-            <li>Insights com IA e Machine Learning</li>
-            <li>Gestão de Estoques Inteligente</li>
-            <li>Dashboard Interativo em Tempo Real</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Linha do Tempo</h3>
-          <ul>
-            <li>Fase 1 – Levantamento de Dados</li>
-            <li>Fase 2 – Desenvolvimento de Modelos</li>
-            <li>Fase 3 – Testes e Validações</li>
-            <li>Fase 4 – Implementação</li>
-            <li>Fase 5 – Monitoramento e Melhorias Contínuas</li>
-          </ul>
-        </div>
-      </div>
+      <img src="https://raw.githubusercontent.com/ClaraRamos23/Projeto-Datainsing-/refs/heads/main/Imagem%20Dados.webp" alt="#" /> 
+      <div class="cards"></div>
+        <div class="card"> </div>
     </main>
   </div>
 </body>
-</html>
