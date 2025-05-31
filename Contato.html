@@ -3,12 +3,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <title>Contato - DataInsight</title>
   <style>
     body {
       background-color: #eeedff;
-      font-family: Arial, sans-serif;
-      margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+        margin: 0;
     }
     
 
@@ -18,10 +22,37 @@
     }
 
     .sidebar {
-      width: 220px;
+      width: 250px;
       background-color: #5a4fcf;
       color: white;
-      padding: 20px;
+      padding: 0px;
+    }
+
+.logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .slogan {
+      font-size: 0.9em;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      border-left: 10px solid #eaeaff;
     }
 
     .main-content {
@@ -52,7 +83,7 @@
       <h2>DataInsight</h2>
       <p>Transformando dados em decisões inteligentes para Natura e Avon</p>
       <nav>
-        
+        <nav class="menu">
         <a href="index.html" style="color: white;">Início</a><br>
         <a href="FAQ.html" style="color: white;">FAQ</a><br>
         <a href="Contato.html" style="color: white; text-decoration: underline;">Contato</a>
@@ -77,7 +108,7 @@
   </div>
 </body>
 </html>
-
+  
 
 
 
